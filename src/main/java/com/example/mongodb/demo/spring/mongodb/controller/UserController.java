@@ -32,7 +32,7 @@ public class UserController {
   @PutMapping("/{Id}")
   public Users updateDept(@RequestBody Users users, @PathVariable Long Id) {
     users.setId(Id);
-    userRepository.save(users);
+    userRepository.save(user);
     return users;
   }
   @DeleteMapping("delete/{Id}")
